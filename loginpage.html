@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="stylesheet" href="myntra.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="myntra.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logo-container">
+            <a href="C:\Users\Dell\Desktop\project\myntra\index.html"><img class="myntra-home" src="C:\Users\Dell\Desktop\project\myntra\img\logo.jpg" alt=""></a>
+        </div>
+        <nav class="nav-bar">
+            <a href="C:\Users\Dell\Desktop\project\myntra\index.html" id="man">Man</a>
+            <a href="C:\Users\Dell\Desktop\project\myntra\index.html" id="women">Women</a>
+            <a href="C:\Users\Dell\Desktop\project\myntra\index.html" id="kid">Kids</a>
+            <a href="C:\Users\Dell\Desktop\project\myntra\index.html" id="home">Home & Living </a>
+            <a href="C:\Users\Dell\Desktop\project\myntra\index.html" id="beauty">Beauty</a>
+            <a href="C:\Users\Dell\Desktop\project\myntra\index.html" id="stu">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search-bar">
+            <input class="search-input" type="" placeholder="Search for products,brand and more">
+            <span class="material-symbols-outlined  " id="search-icon">search</span>
+        </div>
+        <div class="action-bar">
+            <div class="action-container">
+                <div class="material-symbols-outlined" id="person">person</div>
+                <span class="action-name">Profile</span>
+            </div>
+            <div class="action-container">
+                <div class="material-symbols-outlined  " class="action-bar">Favorite</div>
+                <span class="action-name">Wishlist</span>
+            </div>
+            <div class="action-container">
+                <span class="material-symbols-outlined " class="action-bar"> Shopping_Bag</span>
+                <span class="action-name">Bag</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div style="height: 700px; background-color: rgb(246, 235, 235); display: flex; justify-content: center; ">
+            <div class="imgdiv" style="background-color: #ffffff; height:600px; margin-top: 4px;  position: absolute;">
+                <img src="C:\Users\Dell\Desktop\project\myntra\img\2345678.jpg" style="height: 180px; width: 420px; position: relative; " alt="">
+                <div style="display: flex; flex-direction: row; justify-content: center;">
+                    <h3 style="margin:3px; text-decoration: none; font-weight: 700; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-transform: uppercase; margin-top: 12px; font-size: 1.7em; ">login</h3>
+                    <p style="margin:3px; text-decoration: none; font-weight: 600; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-transform: uppercase; margin-top: 12px; font-size: 1.7em; ">&</p>
+                    <h3 style="margin:3px; text-decoration: none; font-weight: 700; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-transform: uppercase; margin-top: 12px; font-size: 1.7em;  ">
+                        Signup</h3>
+
+                </div>
+                <div style="justify-content: center; align-items: center;">
+                    <input type="text" id="inp" style="border-radius: 3px; position: relative; top: 40px; left: 17%; display: flex; height:42px; width: 70% ; color: rgb(114, 17, 17); padding-left: 70px; opacity:0.7;" placeholder="Mobile Number">
+                    <h3 style=" display: flex;border-radius: 3px; position: relative; top: 9px; font-weight: 220; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; left: 21%; height:42px; width: 14px; opacity: 0.5; "> +91 </h3>
+                </div>
+                <div style="display:inline; justify-content: center; margin: 5px; position:relative; top: 25px; width: 70%;">
+
+
+                    By continuing, I agree to the <a href="" style="color: rgb(250, 10, 134); text-decoration: none;">Terms of Use</a> &amp; <a href="" style="color: rgb(250, 10, 134); text-decoration: none;">Privacy Policy</a>
+
+
+                </div>
+
+                <div style="display: flex; justify-content: center; position: relative; top: 10%;">
+                    <button class="btn" style="background-color: rgb(231, 30, 107); height: 40PX; width: 75%; color: white;font-weight: bold; border: 0px; border-radius: 7px;">CONTINUE</button>
+                </div>
+
+                <div style="display:inline; justify-content: center; margin: 5px; position:relative; top: 100px; left: 17%; width: 70%;">
+                    Have trouble logging in?
+                    <a href="" style="color: rgb(250, 10, 134); text-decoration: none;"> Get help</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $(".btn").click(function() {
+            var input = $('#inp').val().trim();
+            var num = /^[0-9]+$/;
+
+            var numericInput = Number(input);
+
+            if (input === "" || !num.test(input) || input.length !== 10 || isNaN(numericInput)) {
+                alert("Please enter a valid 10-digit mobile number ");
+            } else {
+                alert("your account has been created....")
+            }
+        });
+    });
+</script>
+
+</html>
