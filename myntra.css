@@ -683,4 +683,125 @@ header {
     padding: 5px 5px;
     cursor: pointer;
     border-radius: 10px;
+}  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    margin-left: 4%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.nav-bar a {
+    color: #282c3f;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 28px 0;
+    position: relative;
+}
+
+.nav-bar a:hover {
+    color: #f54e77;
+}
+
+.banner-container {
+    margin: 35px auto;
+    height: 60vh;
+    display: grid;
+    place-items: center;
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    animation: a 10s linear infinite;
+}
+
+@keyframes a {
+    0%, 100% { background-image: url("img/1.jpg"); }
+    30% { background-image: url("img/22222.jpg"); }
+    60% { background-image: url("img/2345678.jpg"); }
+}
+
+.category-heading {
+    color: #3e4152;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    font-weight: 700;
+}
+
+.sale-item {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #dbdbdb;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.sale-item:hover {
+    transform: scale(1.05);
+}
+
+.footer-container {
+    background-color: #fafbfc;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+.footer-column a {
+    color: #696b79;
+    font-size: 14px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.btn-add-bag {
+    background-color: #e8165c;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-add-bag:hover {
+    background-color: #d01252;
+    transform: scale(1.02);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 500px) {
+    .logo-container {
+        margin-left: 2%;
+    }
+    .nav-bar {
+        display: none; /* Consider a mobile menu here */
+    }
+    .search-bar {
+        width: 70%;
+    }
 }
