@@ -8,15 +8,14 @@ $(document).ready(function() {
             $(".after-click-4").hide(1000);
             $(".after-click-nn").slideUp(1000);
             $(".after-click-6").slideUp(1000);
-
             $(".after-click-3").hide(1000);
-
         },
         dblclick: function() {
             $(".after-click").slideUp(1000);
         }
     });
 });
+
 $(document).ready(function() {
     $(".after-click-1").hide();
     $("#women").on({
@@ -28,17 +27,15 @@ $(document).ready(function() {
             $(".after-click-4").hide(1000);
             $(".after-click-nn").slideUp(1000);
             $(".after-click-6").slideUp(1000);
-
-
         },
         dblclick: function() {
             $(".after-click-1").slideUp(1000);
         }
     });
 });
+
 $(document).ready(function() {
     $(".after-click-2").hide();
-
     $("#kid").on({
         click: function() {
             $(".after-click-2").slideDown(1000);
@@ -54,12 +51,11 @@ $(document).ready(function() {
         }
     });
 });
+
 $(document).ready(function() {
     $(".after-click-3").hide();
-
     $("#home").on({
         click: function() {
-
             $(".after-click-3").slideDown(1000);
             $(".after-click-nn").slideUp(1000);
             $(".after-click-4").hide(1000);
@@ -67,7 +63,6 @@ $(document).ready(function() {
             $(".after-click-1").hide(1000);
             $(".after-click-2").hide(1000);
             $(".after-click-6").slideUp(1000);
-
         },
         dblclick: function() {
             $(".after-click-3").slideUp(1000);
@@ -77,7 +72,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(".after-click-4").hide();
-
     $("#beauty").on({
         click: function() {
             $(".after-click-4").slideDown(1000);
@@ -86,16 +80,15 @@ $(document).ready(function() {
             $(".after-click-3").hide(1000);
             $(".after-click-nn").slideUp(1000);
             $(".after-click-6").slideUp(1000);
-
             $(".after-click-2").hide(1000);
             $(".after-click-6").slideUp(1000);
-
         },
         dblclick: function() {
             $(".after-click-4").hide(1000);
         }
     });
 });
+
 $(document).ready(function() {
     $(".after-click-6").hide();
     $("#stu").on({
@@ -105,9 +98,7 @@ $(document).ready(function() {
             $(".after-click-6").slideDown(1000);
             $(".after-click-4").hide(1000);
             $(".after-click-nn").slideUp(1000);
-
             $(".after-click-3").hide(1000);
-
         },
         dblclick: function() {
             $(".after-click-6").slideUp(1000);
@@ -115,10 +106,8 @@ $(document).ready(function() {
     });
 });
 
-
 $(document).ready(function() {
     $("#after-click-nn").hide();
-
     $("#person").on({
         click: function() {
             $(".after-click-nn").slideDown(1000);
@@ -128,7 +117,6 @@ $(document).ready(function() {
             $(".after-click-2").hide(1000);
             $(".after-click-4").hide(1000);
             $(".after-click-6").slideUp(1000);
-
         },
         dblclick: function() {
             $(".after-click-nn").slideUp(1000);
@@ -136,20 +124,12 @@ $(document).ready(function() {
     });
 });
 
-
-
-
-
-
-
-
 let bagItem = [];
 bagitemcount();
 
 function addTobag(itemId) {
     bagitemcount();
     bagItem.push(itemId);
-
 }
 
 function bagitemcount() {
@@ -165,9 +145,10 @@ function bagitemcount() {
 function item() {
     let itemsContainerElement = document.querySelector(".items-container");
 
-    let items = [{
+    let items = [
+        {
             id: "0001",
-            item_image: "img/8.jpg",
+            item_image: "https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg",
             rating: "3.1",
             review: "1.4k",
             company_name: "Carlton London",
@@ -178,7 +159,7 @@ function item() {
         },
         {
             id: "0002",
-            item_image: "img/4.jpg",
+            item_image: "https://images.pexels.com/photos/1234568/pexels-photo-1234568.jpeg",
             rating: "4.5",
             review: "1.4k",
             company_name: "London",
@@ -189,7 +170,7 @@ function item() {
         },
         {
             id: "0003",
-            item_image: "img/7.jpg",
+            item_image: "https://images.pexels.com/photos/1234569/pexels-photo-1234569.jpeg",
             rating: "2.5",
             review: "2.4k",
             company_name: "NIVEA",
@@ -200,10 +181,10 @@ function item() {
         },
         {
             id: "0004",
-            item_image: "img/8.jpg",
+            item_image: "https://images.pexels.com/photos/1234570/pexels-photo-1234570.jpeg",
             rating: "4.5",
             review: "1.4k",
-            company_name: "roadster",
+            company_name: "Roadster",
             item_name: "CZ Floral",
             price: 910,
             original_price: 430,
@@ -211,7 +192,7 @@ function item() {
         },
         {
             id: "0005",
-            item_image: "img/4.jpg",
+            item_image: "https://images.pexels.com/photos/1234571/pexels-photo-1234571.jpeg",
             rating: "4.5",
             review: "1.4k",
             company_name: "Carlton London",
@@ -222,7 +203,7 @@ function item() {
         },
         {
             id: "0006",
-            item_image: "img/7.jpg",
+            item_image: "https://images.pexels.com/photos/1234572/pexels-photo-1234572.jpeg",
             rating: "4.5",
             review: "1.4k",
             company_name: "London",
@@ -233,7 +214,7 @@ function item() {
         },
         {
             id: "0007",
-            item_image: "img/8.jpg",
+            item_image: "https://images.pexels.com/photos/1234573/pexels-photo-1234573.jpeg",
             rating: "4.5",
             review: "1.4k",
             company_name: "Carlton London",
@@ -244,7 +225,7 @@ function item() {
         },
         {
             id: "0008",
-            item_image: "img/4.jpg",
+            item_image: "https://images.pexels.com/photos/1234574/pexels-photo-1234574.jpeg",
             rating: "4.5",
             review: "1.4k",
             company_name: "London",
