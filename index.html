@@ -1,112 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYNTRA BY PRAVEEN</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="myntra.css">
-    <script src="myntra.js" defer></script>
-    <script src="bag.js"></script>
+    <title>Myntra-Like E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="#"><img class="myntra-home" src="img/logo.jpg" alt="Myntra Logo"></a>
-        </div>
-        <nav class="nav-bar">
-            <a href="#" id="man">Man</a>
-            <a href="#" id="women">Women</a>
-            <a href="#" id="kid">Kids</a>
-            <a href="#" id="home">Home & Living </a>
-            <a href="#" id="beauty">Beauty</a>
-            <a href="#" id="stu">Studio <sup>New</sup></a>
-        </nav>
-        <div class="search-bar">
-            <input class="search-input" type="text" placeholder="Search for products, brand and more">
-            <span class="material-symbols-outlined" id="search-icon">search</span>
-        </div>
-        <div class="action-bar">
-            <div class="action-container" id="person">
-                <div class="material-symbols-outlined per">person</div>
-                <span class="action-name person">Profile</span>
-            </div>
-            <div class="action-container bag">
-                <div class="material-symbols-outlined">Favorite</div>
-                <span class="action-name">Wishlist</span>
-            </div>
-            <div class="action-container bag">
-                <span class="material-symbols-outlined alp">Shopping_Bag</span>
-                <span class="action-name">Bag
-                    <a href="bag.html" id="bage"><span class="bag-item-count">0</span></a>
-                </span>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="banner-container">
-            <img class="banner-img" src="https://images.pexels.com/photos/1239298/pexels-photo-1239298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Fashion Banner">
-        </div>
-        <div class="category-heading">MEDAL WORTHY BRANDS TO BAG</div>
-        <div class="items-container">
-            <div class="item">
-                <img src="https://images.pexels.com/photos/3771065/pexels-photo-3771065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Men's Clothing">
-                <p>Men's Collection</p>
-            </div>
-            <div class="item">
-                <img src="https://images.pexels.com/photos/3771070/pexels-photo-3771070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Women's Clothing">
-                <p>Women's Collection</p>
-            </div>
-            <div class="item">
-                <img src="https://images.pexels.com/photos/3771069/pexels-photo-3771069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Kids' Clothing">
-                <p>Kids' Collection</p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>ONLINE SHOPPING</h3>
-                <a href="#">Man</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
-            </div>
-            <div class="footer-column">
-                <h3>USEFUL LINKS</h3>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
-                <a href="#">Site Map</a>
-                <a href="#">Corporate Information</a>
-                <a href="#">Whitehat</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Cleartrip</a>
-            </div>
-            <div class="footer-column">
-                <h3>CUSTOMER POLICIES</h3>
-                <a href="#">Contact Us</a>
-                <a href="#">FAQ</a>
-                <a href="#">T&C</a>
-                <a href="#">Terms Of Use</a>
-                <a href="#">Track Orders</a>
-                <a href="#">Shipping</a>
-                <a href="#">Cancellation</a>
-                <a href="#">Privacy policy</a>
-                <a href="#">Returns</a>
-                <a href="#">Grievance Office</a>
-            </div>
-        </div>
-        <hr>
-        <div class="copy-right">
-            @2024 www.myntra.com All rights reserved.
-        </div>
-    </footer>
-</body>
 
+<header>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="myntra-home">
+    </div>
+    <nav class="nav-bar">
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Home</a>
+    </nav>
+    <div class="action-bar">
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div id="search-icon" class="material-icons">search</div>
+        </div>
+        <div class="bag">
+            <span class="material-icons">shopping_bag</span>
+            <span class="bag-item-count">0</span>
+        </div>
+        <div id="person" class="material-icons">person</div>
+    </div>
+</header>
+
+<div class="banner-container"></div>
+
+<h2 class="category-heading">Featured Products</h2>
+<div class="items-container">
+    <div class="item-container">
+        <img src="item1.jpg" alt="Item 1" class="item-image">
+        <div class="company-name">Company Name</div>
+        <div class="item-name">Product Name</div>
+        <div class="price">
+            <span class="current-price">$50.00</span>
+            <span class="original-price">$70.00</span>
+            <span class="discount">-30%</span>
+        </div>
+        <button class="btn-add-bag">Add to Bag</button>
+    </div>
+    <div class="item-container">
+        <img src="item2.jpg" alt="Item 2" class="item-image">
+        <div class="company-name">Company Name</div>
+        <div class="item-name">Product Name</div>
+        <div class="price">
+            <span class="current-price">$40.00</span>
+            <span class="original-price">$60.00</span>
+            <span class="discount">-33%</span>
+        </div>
+        <button class="btn-add-bag">Add to Bag</button>
+    </div>
+    <!-- Add more items as needed -->
+</div>
+
+<footer class="footer-container">
+    <div class="footer-column">
+        <h3>About Us</h3>
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+    </div>
+    <div class="footer-column">
+        <h3>Customer Service</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+    </div>
+    <div class="footer-column">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+<div class="copy-right">
+    &copy; 2024 Your Brand Name. All Rights Reserved.
+</div>
+
+</body>
 </html>
